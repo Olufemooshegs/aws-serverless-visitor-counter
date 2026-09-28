@@ -1,0 +1,41 @@
+# ── Terraform ────────────────────────────────────────────
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# ── Terraform variable files ─────────────────────────────
+# Commit terraform.tfvars.example instead, not the real one
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# ── Lambda build artifacts ───────────────────────────────
+**/build/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# ── AWS credentials (paranoia) ───────────────────────────
+.aws/
+credentials
+
+# ── OS / Editor ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ── Logs ─────────────────────────────────────────────────
+*.log
